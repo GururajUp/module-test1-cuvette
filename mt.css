@@ -1,0 +1,341 @@
+body{
+    background-color: #89c15e;
+}
+.count-win{
+    display: flex;
+    border: 2px solid white;
+    margin-left: 290px;
+    margin-right: 290px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.score-header{
+    color: white;
+    font-family: Roboto;
+font-size: 30px;
+font-weight: 900;
+line-height: 9px;
+letter-spacing: 0.1em;
+text-align: left;
+margin-left: 20px;
+}
+.pc-score{
+    width: 100px;
+    height: 120px;
+    background-color:#FFFFFF;
+    border-radius: 5px;
+    margin-left: 230px;
+}
+.yr-score{
+    width: 100px;
+    height: 120px;
+    background-color:#FFFFFF;
+    border-radius: 5px; 
+    margin-left: 50px;
+}
+.scorecard{
+    display: inline-flex;
+    align-items: center;
+}
+.pc-score .class-p{
+    text-align: center;
+    font-family: Roboto;
+font-size: 17px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.1em;
+color: #656565;
+}
+.yr-score .class-p{
+    text-align: center;
+    font-family: Roboto;
+font-size: 17px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.1em;
+color:#656565;
+}
+.pc-score .class-p2{
+    text-align: center;
+    font-family: Roboto;
+font-size: 17px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.1em;
+color:#656565;
+margin-top: -15px;
+}
+.yr-score .class-p2{
+    text-align: center;
+    font-family: Roboto;
+font-size: 17px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.1em;
+color:#656565;
+margin-top: -15px;
+}
+.class1 {
+    font-family: Roboto;
+font-weight: 800;
+letter-spacing: 0em;
+color: black;
+text-align: center;
+font-size: 50px;
+margin-top: -16px;
+}
+.play1{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 450px;
+    top: 250px;
+    cursor: pointer;
+}
+.line1{
+    position: absolute;
+    top: 325px;
+    left: 590px;
+}
+.play2{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 700px;
+    top: 250px;
+    cursor: pointer;
+}
+.line2{
+    position: absolute;
+    top: 375px;
+    left: 680px;
+}
+.play3{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 453px;
+    left: 575px ;
+    cursor: pointer;
+}
+.line3{
+    position: absolute;
+    top: 375px;
+    left: 553px;
+}
+.game-rule{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    left: 1050px;
+    top: 250px;
+}
+#game-rules{
+    position: absolute;
+    background-color: #89c15e;
+    width: 120px;
+    height: 50px;
+    top: 595px;
+    left: 1150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#next-button{
+  position: absolute;
+  background-color: #89c15e;
+  width: 120px;
+  height: 50px;
+  top: 595px;
+  left: 950px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#rules-popup{
+    display: none;
+}
+#close-button{
+    position: absolute;
+    width: 42px;
+    left: 1255px;
+    top: 260px;
+    font-size: 30px;
+    border: 5px solid #FFFFFF;
+    border-radius: 100%;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+}
+/* winner css */
+.stars, .trophy, .hurray, .won, 
+#rules-button, .Game_Rules, .close-button, 
+#play-again-button {
+  position: absolute;
+}
+
+.hurray, .won, #play-again-button {
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.stars {
+  width: 475px;
+  height: 275px;
+  top: 70px;
+  left: 458px;
+}
+
+.trophy {
+  width: 180px;
+  height: 185px;
+  top: 170px;
+  left: 610px;
+  color: #FFD233;
+}
+
+.hurray {
+  font-size: 85px;
+  line-height: 107px;
+  width: 440px;
+  height: 80px;
+  top: 385px;
+  left: 475px;
+}
+
+.won {
+  font-size: 35px;
+  line-height: 48px;
+  width: 440px;
+  height: 42px;
+  top: 500px;
+  left: 475px;
+}
+.user_result {
+    position: absolute;
+    width: 130px;
+    height: 16px;
+    top: 250px;
+    left: 415px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: white;
+  }
+  
+  #win-circle, #lost-circle {
+    position: absolute;
+    width: 235px;
+    height: 230px;
+    top: 288px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 62px 0px #00000021;
+    z-index: -1;
+  }
+  
+  #win-circle {
+    left: 363px;
+  }
+  
+  #lost-circle {
+    left: 800px;
+  }
+  /* used shorthand css methods for repetitive elements */
+  #user-rock-win, #user-paper-win, #user-scissor-win,
+  #cpu-rock-win, #cpu-paper-win, #cpu-scissor-win,
+  #user-rock-lost, #user-paper-lost, #user-scissor-lost,
+  #cpu-rock-lost, #cpu-paper-lost, #cpu-scissor-lost,
+  #user-rock-tie, #user-paper-tie, #user-scissor-tie,
+  #cpu-rock-tie, #cpu-paper-tie, #cpu-scissor-tie {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 325px;
+    display: none;
+  }
+  
+  #user-rock-win, #user-paper-win, #user-scissor-win,
+  #user-rock-lost, #user-paper-lost, #user-scissor-lost,
+  #user-rock-tie, #user-paper-tie, #user-scissor-tie {
+    left: 392px;
+  }
+  
+  #cpu-rock-win, #cpu-paper-win, #cpu-scissor-win,
+  #cpu-rock-lost, #cpu-paper-lost, #cpu-scissor-lost,
+  #cpu-rock-tie, #cpu-paper-tie, #cpu-scissor-tie {
+    left: 844px;
+  }
+  
+  .cpu_result, .user_result, .title-won{
+    position: absolute;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF;
+    
+  }
+  .title-against{
+    position: absolute;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 15px;
+  }
+  .cpu_result {
+    width: 130px;
+    height: 16px;
+    top: 250px;
+    left: 865px;
+    font-size: 17px;
+  }
+  
+  .title-won {
+    width: 219px;
+    height: 36px;
+    top: 385px;
+    left: 585px;
+    font-size: 39px;
+    text-align: center;
+  }
+  
+  .title-against {
+    width: 168px;
+    height: 31px;
+    top: 423px;
+    left: 602px;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #play-again-button{
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    font-size: 21px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #play-again-button {
+    width: 174px;
+    height: 44px;
+    top: 585px;
+    left: 568px;
+    margin-left: 2.5rem;
+    background: #FFFFFF;
+    color: #6B6B6B;
+    font-size: 15px;
+  }
+  
+  #win-area, #lost-area, #tie-area {
+    display: none;
+  } 

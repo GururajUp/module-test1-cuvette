@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissor Game</title>
+        <link href="mt.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="count-win">
+            <div class="score-header">
+            <p>ROCK</p>
+            <P>PAPER</P>
+            <P>SCISSORS</P>
+            </div>
+            <div class="scorecard">
+            <div class="pc-score">
+                <p class="class-p">Computer</p>
+                <p class="class-p2">score</p>
+                <p id="cs_score"  class="class1">0</p>
+            </div>
+            <div class="yr-score">
+                <p class="class-p">YOUR</p>
+                <p class="class-p2">score</p>
+                <p id="ys_score" class="class1">0</p>
+            </div>
+            </div>
+        </div>
+        <div class="play-area" id="playarea">
+            <img onclick="play('rock')"  class="play1" src="rock pic.png">
+            <img class="line1" src="Line 1.png">
+            <img onclick="play('paper')"  class="play2" src="paper pic.png">
+            <img class="line2" src="Line 2.png">
+            <img onclick="play('scissors')" class="play3" src="scissors pic.png">
+            <img class="line3" src="Line 3.png">
+        </div>
+        <div id="win-area">
+            <div class="user_result">YOU PICKED</div>
+            <img id="win-circle" src="wincircle.png" width="190" height="190" />
+            <img id="user-rock-win" src="rock pic.png" width="150" height="150" />
+            <img id="user-paper-win" src="paper pic.png" width="150" height="150" />
+            <img id="user-scissor-win" src="scissors pic.png" width="150" height="150" />
+            <div class="cpu_result">PC PICKED</div>
+            <img id="cpu-rock-win" src="rock pic.png" width="150" height="150" />
+            <img id="cpu-paper-win" src="paper pic.png" width="150" height="150" />
+            <img id="cpu-scissor-win" src="scissors pic.png" width="150" height="150" />
+            <div class="title-won">YOU WIN</div>
+            <div class="title-against">AGAINST PC</div>
+            <button id="play-again-button" onclick="gamepage()">
+                PLAY AGAIN
+            </button>
+        </div>
+        <div id="lost-area">
+            <div class="user_result">YOU PICKED</div>
+            <img id="lost-circle" src="wincircle.png" width="150" height="150" />
+            <img id="user-rock-lost" src="rock pic.png" width="150" height="150" />
+            <img id="user-paper-lost" src="paper pic.png" width="150" height="150"/>
+            <img id="user-scissor-lost" src="scissors pic.png" width="150" height="150"/>
+            <div class="cpu_result">PC PICKED</div>
+            <img id="cpu-rock-lost" src="rock pic.png" width="150" height="150" />
+            <img id="cpu-paper-lost" src="paper pic.png" width="150" height="150" />
+            <img id="cpu-scissor-lost" src="scissors pic.png" width="150" height="150"/>
+            <div class="title-won">YOU LOST</div>
+            <div class="title-against">AGAINST PC</div>
+            <button id="play-again-button" onclick="gamepage()">
+                PLAY AGAIN
+            </button>
+        </div>
+        <div id="tie-area">
+            <div class="user_result">YOU PICKED</div>
+            <img id="user-rock-tie" src="rock pic.png" width="150" height="150" />
+            <img id="user-paper-tie" src="paper pic.png" width="150" height="150" />
+            <img id="user-scissor-tie" src="scissors pic.png" width="150" height="150"/>
+            <div class="cpu_result">PC PICKED</div>
+            <img id="cpu-rock-tie" src="rock pic.png" width="150" height="150" />
+            <img id="cpu-paper-tie" src="paper pic.png" width="150" height="150" />
+            <img id="cpu-scissor-tie" src="scissors pic.png" width="150" height="150"/>
+            <div class="title-won">TIE UP</div>
+            <button id="play-again-button" onclick="gamepage()">REPLAY</button>
+        </div>
+            <button id="game-rules" type="button">RULES</button>
+            <button id="next-button" onclick="opennewpage()">NEXT</button>
+            <div id="rules-popup">
+            <img class="game-rule" src="game rule.png">
+            <button id="close-button">&times;</button>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>

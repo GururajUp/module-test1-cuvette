@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissor Game</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="mt.css" class="rel" />
+    </head>
+    <body>
+        <div class="winner-page">
+            <img class="stars" src="winning star.png" alt="stars" />
+            <img class="trophy" src="winning cup.png" alt="trophy" />
+            <div class="hurray">HURRAY!!</div>
+            <div class="won">YOU WON THE GAME</div>
+            <div class="gamerules">
+                <button id="play-again-button" onclick="gamepage()">
+                    PLAY AGAIN
+                </button>
+                <button id="game-rules" type="button">RULES</button>
+            </div>
+                <div id="rules-popup">
+                <img class="game-rule" src="game rule.png">
+                <button id="close-button">&times;</button>
+                </div>
+            <script>
+                document.getElementById("game-rules").addEventListener("click", function(){
+                document.getElementById("rules-popup").style.display="block";
+                })
+                document.getElementById("close-button").addEventListener("click", function(){
+                document.getElementById("rules-popup").style.display="none";
+                })
+                function gamepage() {
+                window.location.href = "mt.html";
+                }
+            </script>
+        </body>
+    </html>    
